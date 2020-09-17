@@ -1,0 +1,26 @@
+test_get_first_part_of_name (__main__.TestExercice) ... FAIL
+test_get_num_char (__main__.TestExercice) ... ok
+test_get_random_sentence (__main__.TestExercice) ... ok
+test_is_even_len (__main__.TestExercice) ... ok
+
+======================================================================
+FAIL: test_get_first_part_of_name (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 62, in test_get_first_part_of_name
+    "Mauvaise extraction du premier prénom."
+AssertionError: Lists differ: ['Bonjour , Marie', 'Bonjour , Louis', 'Bonjour , Pierre'] != ['Bonjour, Marie', 'Bonjour, Louis', 'Bonjour, Pierre']
+
+First differing element 0:
+'Bonjour , Marie'
+'Bonjour, Marie'
+
+- ['Bonjour , Marie', 'Bonjour , Louis', 'Bonjour , Pierre']
+?          -                  -                  -
+
++ ['Bonjour, Marie', 'Bonjour, Louis', 'Bonjour, Pierre'] : Mauvaise extraction du premier prénom.
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=1)
